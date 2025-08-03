@@ -1,0 +1,31 @@
+import { CarBrand } from "../enums/brand.enum";
+import { VehicleType } from "../enums/vehicle-type.enum";
+import { EngineType } from "../enums/engine-type.enum";
+import { TransmissionType } from "../enums/transmission-type.enum";
+import { CarFeatures } from "../enums/features.enum";
+export declare class RegisterCarDto {
+    name: string;
+    images: string[];
+    brand: CarBrand;
+    description: string;
+    price_per_day: number;
+    price_per_hour: number;
+    vehicle_type: VehicleType;
+    country_of_manufacture: string;
+    city_of_registeration: string;
+    color_code: string;
+    mileage: number;
+    engine_type: EngineType;
+    transmission_type: TransmissionType;
+    fuel_economy: number;
+    available_start_date_time: string;
+    available_end_date_time: string;
+    pickup_address: string;
+    dropoff_address: string;
+    features: CarFeatures[];
+    maximum_passengers: number;
+    luggage_capacity: number;
+    insurance_included: boolean;
+    pet_policy: boolean;
+    smoking_policy: boolean;
+}

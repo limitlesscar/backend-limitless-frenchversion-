@@ -598,12 +598,10 @@ export class StripeService {
             event.data.object.id,
           );
           break;
-
         case "account.application.deauthorized":
           console.log("ACCOUNT IS DISCONNECT FROM YOUR PLATFORM");
           // console.log(event);
           break;
-
         default:
           console.log(`Unhandled event type ${event.type}`);
       }

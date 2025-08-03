@@ -1,0 +1,15 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const config_1 = require("@nestjs/config");
+exports.default = (0, config_1.registerAs)("app", () => ({
+    timezone: process.env.TZ,
+    environment: process.env.NODE_ENV,
+    port: parseInt(process.env.PORT, 10) || 8001,
+    userSecret: process.env.USER_SECRET_KEY,
+    userExpiresIn: process.env.USER_EXPIRES_IN,
+    adminSecret: process.env.ADMIN_SECRET_KEY,
+    adminExpiresIn: process.env.ADMIN_EXPIRES_IN,
+    otpExpiry: process.env.OTP_EXPIRES_IN,
+    otpSecret: process.env.OTP_SECRET_KEY,
+}));
+//# sourceMappingURL=app.config.js.map

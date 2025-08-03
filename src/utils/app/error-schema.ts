@@ -7,6 +7,6 @@ export const errorSchema = (
   type: "object",
   example: {
     statusCode,
-    message: message || "Error message",
+    message: message || "Message d'erreur",
   },
 });
