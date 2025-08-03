@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",                        // Use CommonJS module system (used in Node.js)
+    "declaration": true,                         // Generate .d.ts declaration files for TypeScript types
+    "removeComments": true,                      // Remove comments from the compiled JavaScript files
+    "emitDecoratorMetadata": true,               // Emit metadata needed by decorators (used by frameworks like NestJS)
+    "experimentalDecorators": true,              // Enable support for experimental decorators
+    "allowSyntheticDefaultImports": true,        // Allow default imports from modules without a default export
+    "target": "ES2021",                          // Compile the code to be compatible with ES2021 JavaScript
+    "sourceMap": true,                           // Generate source maps for debugging
+    "outDir": "./dist",                          // Output compiled JavaScript files to the ./dist directory
+    "baseUrl": "./",                             // Base directory to resolve non-relative module names
+    "incremental": true,                         // Enable incremental compilation for faster builds
+    "skipLibCheck": true,                        // Skip type checking of declaration files (.d.ts)
+    "strictNullChecks": false,                   // Disable strict null checking
+    "noImplicitAny": false,                      // Allow variables to implicitly have the `any` type
+    "strictBindCallApply": false,                // Disable strict checks for bind, call, and apply methods
+    "forceConsistentCasingInFileNames": false,   // Do not enforce consistent casing in file names
+    "noFallthroughCasesInSwitch": false          // Allow fallthrough between switch cases
+  }
+}

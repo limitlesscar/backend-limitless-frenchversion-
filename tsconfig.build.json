@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.json",                // Inherit compiler options from the base tsconfig.json file
+  "exclude": [
+    "node_modules",                            // Exclude external dependencies
+    "test",                                    // Exclude test directory
+    "dist",                                    // Exclude compiled output directory
+    "**/*spec.ts"                              // Exclude all test specification files (commonly used for unit tests)
+  ]
+}
